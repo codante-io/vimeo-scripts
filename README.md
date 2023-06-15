@@ -1,6 +1,6 @@
-# vimeo-api
+# Vimeo Scripts
 
-Este projeto usa o bun ao invés do Node!
+Atenção: este projeto usa o bun ao invés do Node!
 
 Para instalar dependências:
 
@@ -8,7 +8,9 @@ Para instalar dependências:
 bun install
 ```
 
-Para rodar algum script
+Feito isso, é necessário criar um arquivo `.env` (existe um `.env.copy` como exemplo no repo) e adicionar o token do Vimeo.
+
+Para rodar algum script:
 
 ```bash
 bun run scriptName.ts
