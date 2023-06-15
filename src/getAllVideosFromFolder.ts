@@ -6,13 +6,16 @@ dotenv.config();
 // ======= CONSTs =======
 // Altere aqui!
 const VIMEO_TOKEN = process.env.VIMEO_TOKEN;
-const VIMEO_FOLDER_ID = 16568487;
+const VIMEO_FOLDER_ID = process.env.VIMEO_FOLDER_ID;
 // ======================
+
+if(!VIMEO_TOKEN) throw new Error('VIMEO_TOKEN not found in .env file');
+if(!VIMEO_FOLDER_ID) throw new Error('VIMEO_FOLDER_ID not found in .env file');
 
 getAllVideosFromFolder(VIMEO_FOLDER_ID);
 
 
-function getAllVideosFromFolder(folderId: number) {
+function getAllVideosFromFolder(folderId: string | number) {
   axios
     .get(`https://api.vimeo.com/me/projects/${folderId}/videos?per_page=100`, {
       headers: {

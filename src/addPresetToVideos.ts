@@ -6,8 +6,14 @@ dotenv.config();
 // Altere aqui!
 // ======= CONSTs =======
 const VIMEO_TOKEN = process.env.VIMEO_TOKEN;
-const VIMEO_FOLDER_ID = 16568487;
+const VIMEO_FOLDER_ID = process.env.VIMEO_FOLDER_ID;
 const VIMEO_PRESET_ID_CODANTE = 121111854;
+
+// ======================
+
+if(!VIMEO_TOKEN) throw new Error('VIMEO_TOKEN not found in .env file');
+if(!VIMEO_FOLDER_ID) throw new Error('VIMEO_FOLDER_ID not found in .env file');
+
 
 // Descomente aqui!
 addPresetToVideosInFolder(VIMEO_FOLDER_ID);
@@ -15,7 +21,7 @@ addPresetToVideosInFolder(VIMEO_FOLDER_ID);
 
 // Esta função adiciona o preset de codante a todos os vídeos de uma pasta. 
 // É necessário passar o 
-async function addPresetToVideosInFolder(folderId: number) {
+async function addPresetToVideosInFolder(folderId: number | string) {
   const response = await axios.get(
     `https://api.vimeo.com/me/projects/${folderId}/videos?per_page=100`,
     {
