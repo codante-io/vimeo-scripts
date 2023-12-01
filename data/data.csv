@@ -1,21 +1,22 @@
 name,description
-Apresentação do Instrutor,O Lucas Viana se apresenta nesta aula.
-Apresentação dos Microfrontends,"O instrutor apresenta o conteúdo do Workshop, a história e o racional por trás da arquitetura de Microfrontends."
-Framework de Decisões de Microfrontends,"Continuando com a teoria, é importante fazer as perguntas corretas antes de implementar quaisquer estratégias de arquitetura. Com Microfrontends não é diferente."
-Microfrontends com Iframes - Criando o Header,"A forma mais simples de usar microfrontends é através de Iframes. Por mais que essa técnica não seja mais tão utilizada, é importante para entender a lógica por trás dos Microfrontends. 
-
-Aqui o Lucas está usando o React para exemplificar, mas qualquer biblioteca frontend poderia ser utilizada."
-Estilizando o Header,"Vamos estilizar um pouco nosso primeiro micro frontend, que é o Header"
-Adicionando o Header com Iframe,"O Header é nosso primeiro microfrontend. Vamos adicioná-lo ao frontend “pai” que é o App Root, usando a técnica de iframe. Vamos mostrar também algumas razões pelas quais não utilizamos muito os iframes como técnica para microfrontend."
-**Outra estratégia: Compondo com bibliotecas de componentes UIs**,Uma outra estratégia possível é uma UI Library. Entretanto vamos ver porque essa também é uma estratégia com alguns pontos negativos. —-
-Introdução ao Module Federation,O webpack 5 trouxe uma forma mais eficaz de composição de microfrontends através de uma estratégia chamada “module federation”. Vamos criar o boilerplate de uma aplicação que usa ela.
-Criando os componentes Header e Footer,"Na aplicação filho (child), vamos criar os componentes Header e Footer usando o Mantine - que é uma biblioteca de componentes - para termos estilos mais consistentes na nossa aplicação."
-Configurando o Module Federation,"Vamos entender sobre a configuração “exposes” e o “remotes” do Module Federation. Vamos fazer isso para importar o Header e o Footer na aplicação host.
-
-O Lucas também aproveita para responder uma dúvida"
-Otimizando Importações,Vamos agora utilizar o React.Lazy e Suspense para demonstrar uma possível otimização no nosso código.
-Trocando Informações entre componentes,Trocar informações e dados entre os componentes é tão simples como passar props para o componente.
-Criando a API do Pet Shop,Vamos fazer o setup de um novo projeto com o create-mf-app. Vamos primeiro fazer o setup de uma API simples.
-Criando o Front do Pet Shop,Começando com a criação do Card de cachorro e o componente responsável pela listagem de Cachorros.
-Conectando os microfrontends,Vamos criar agora um outro frontend. Esse será o App responsável por se conectar e renderizar o componente (microfrontend) de listagem de cachorros.
-Adicionando Rotas à Aplicação,Vamos adicionar o React Router Dom à nossa aplicação para deixá-la um pouco mais dinâmica.
+Apresentação do Instrutor,O Lucas Viana se apresenta e apresenta a estrutura do Workshop
+Contexto do GraphQL,Vamos voltar à história e entender o contexto no qual o GraphQL surgiu e quais problemas resolvia
+O que é GraphQL e sua Aplicação,"O Lucas traz uma definição para o que é GraphQL, além de falar o que GraphQL não é."
+Nossa primeira Query com GraphQL,Vamos utilizar a API do Rick & Morty para treinarmos os primeiros passos com o GraphQL
+Principais bibliotecas de GraphQL,As 3 principais bibliotecas que utilizam GraphQL são apresentadas nessa aula. O Lucas também traz o exemplo da nova API do Github que utiliza GraphQL.
+Possibilidade de usos,Vamos ver as diferentes formas de utilização do GraphQL e a possibilidade de operar conjuntamente com APIs Rest.
+Dica: Nomeando Operações,Porque é importante que as operações sejam nomeadas no GraphQL
+Entendendo um Schema,Vamos subir uma API própria de livros e autores para treinarmos outras operações bem como entender como são definidos Schemas. O instrutor também tira algumas dúvidas que surgiram.
+Criando uma mutation,Agora iremos ver como funciona uma mutation usando a API de livros que foi apresentada anteriormente.
+Variáveis e Fragments no GraphQL,Vamos otimizar nossas operações utilizando variáveis e fragments no GraphQL.
+GraphQL é uma chamada HTTP,"Vamos ver o que acontece em uma requisição do GraphQL. No fim do dia, é apenas uma chamada HTTP. O instrutor aproveita também para tirar uma dúvida."
+Resolvers,A interligação entre as operações  e a base de dados é feita pelos resolvers. Vamos ver como eles são estruturados no lado do servidor.
+Começando com o Apollo Client,Vamos consumir nossa API GraphQL com um frontend em React
+Queries no React,Vamos executar a primeira query dentro de um componente React.
+Query com o useLazyQuery,"O useQuery é executado quando o componente é renderizado e não é adequado para ser usado em eventos (como clique de botão, por exemplo). Para isso, vamos ver o useLazyQuery."
+Uma Mutation em um formulário no React,Vamos criar a primeira mutation para cadastrar autores na nossa aplicação
+Atualizando o cache no Apollo,"Em algumas situações o cache do Apollo é atualizado de forma automática. Em outras, precisamos fazer de forma manual. Nesta aula é proposto um exercício para resolver o problema de cache do createAuthor"
+Resolvendo o problema de atualização do cache,Vamos ver a resolução do exercício para atualização do cache.
+Optimistic UI com Apollo,"Para deixar uma experiência mais fluida, vamos utilizar essa estratégia de ""UI otimista"" que é facilmente implementável com o Apollo."
+Schema no cliente,Guardando informações no cliente pode ser uma estratégia importante e é possível com o Apollo.
+Criando um cadastro para Livros,Vamos finalizar nossa aplicação criando agora um formulário de cadastro de Livros que vai utilizar a lista de autores em um select
