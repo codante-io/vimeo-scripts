@@ -41,6 +41,8 @@ function getAllVideosFromFolder(folderId: string | number) {
       response.data.data.forEach((video: any) => {
         if (!isNaN(video.name)) {
           let index = Number(video.name) - 1;
+          console.log(results[index]);
+
           results[index]["video_url"] = video.link.replace(
             "https://vimeo.com/",
             "https://player.vimeo.com/video/"
