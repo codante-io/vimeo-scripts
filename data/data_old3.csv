@@ -1,0 +1,9 @@
+name,description
+Apresentação do Projeto,Vamos apresentar o que será construído hoje.
+Instalando o template inicial,"Se você ainda não está participando do Mini Projeto no Codante, essa é a hora."
+A estrutura do projeto,Aqui o instrutor mostra como o projeto está estruturado e pronto para começar.
+Os componentes Reorder do Framer Motion,Vamos olhar a documentação e entender um pouco mais sobre o Framer Motion
+Adicionando o Framer Motion ao Projeto,Vamos usar os dois componentes Reorder.Group e Reorder.Item ao nosso projeto. Vamos ver quais props que obrigatoriamente precisamos passar a esses componentes.
+Adicionando Estado para tornar a lista reativa,É necessário que a lista esteja no estado para que seja refletida de forma correta na nossa UI. Vamos fazer isso.
+A propriedade pointer-events do CSS,Precisamos ainda fazer um último ajuste para que o Drag and Drop funcione também nas imagens .
+Finalização e próximos passos,Algumas sugestões do que poderá ser feito a partir deste projeto.

@@ -1,22 +1,17 @@
 name,description
-Apresentação do Instrutor,O Lucas Viana se apresenta e apresenta a estrutura do Workshop
-Contexto do GraphQL,Vamos voltar à história e entender o contexto no qual o GraphQL surgiu e quais problemas resolvia
-O que é GraphQL e sua Aplicação,"O Lucas traz uma definição para o que é GraphQL, além de falar o que GraphQL não é."
-Nossa primeira Query com GraphQL,Vamos utilizar a API do Rick & Morty para treinarmos os primeiros passos com o GraphQL
-Principais bibliotecas de GraphQL,As 3 principais bibliotecas que utilizam GraphQL são apresentadas nessa aula. O Lucas também traz o exemplo da nova API do Github que utiliza GraphQL.
-Possibilidade de usos,Vamos ver as diferentes formas de utilização do GraphQL e a possibilidade de operar conjuntamente com APIs Rest.
-Dica: Nomeando Operações,Porque é importante que as operações sejam nomeadas no GraphQL
-Entendendo um Schema,Vamos subir uma API própria de livros e autores para treinarmos outras operações bem como entender como são definidos Schemas. O instrutor também tira algumas dúvidas que surgiram.
-Criando uma mutation,Agora iremos ver como funciona uma mutation usando a API de livros que foi apresentada anteriormente.
-Variáveis e Fragments no GraphQL,Vamos otimizar nossas operações utilizando variáveis e fragments no GraphQL.
-GraphQL é uma chamada HTTP,"Vamos ver o que acontece em uma requisição do GraphQL. No fim do dia, é apenas uma chamada HTTP. O instrutor aproveita também para tirar uma dúvida."
-Resolvers,A interligação entre as operações  e a base de dados é feita pelos resolvers. Vamos ver como eles são estruturados no lado do servidor.
-Começando com o Apollo Client,Vamos consumir nossa API GraphQL com um frontend em React
-Queries no React,Vamos executar a primeira query dentro de um componente React.
-Query com o useLazyQuery,"O useQuery é executado quando o componente é renderizado e não é adequado para ser usado em eventos (como clique de botão, por exemplo). Para isso, vamos ver o useLazyQuery."
-Uma Mutation em um formulário no React,Vamos criar a primeira mutation para cadastrar autores na nossa aplicação
-Atualizando o cache no Apollo,"Em algumas situações o cache do Apollo é atualizado de forma automática. Em outras, precisamos fazer de forma manual. Nesta aula é proposto um exercício para resolver o problema de cache do createAuthor"
-Resolvendo o problema de atualização do cache,Vamos ver a resolução do exercício para atualização do cache.
-Optimistic UI com Apollo,"Para deixar uma experiência mais fluida, vamos utilizar essa estratégia de ""UI otimista"" que é facilmente implementável com o Apollo."
-Schema no cliente,Guardando informações no cliente pode ser uma estratégia importante e é possível com o Apollo.
-Criando um cadastro para Livros,Vamos finalizar nossa aplicação criando agora um formulário de cadastro de Livros que vai utilizar a lista de autores em um select
+### Introdução e Apresentação do Projeto,Apresentando o projeto de Calculadora de IMC com React
+### Iniciando o projeto com Vite e TailwindCSS,"Além de instalarmos o Vite, vamos limpar os arquivos e utilizar um serviço (fav.farm) para utilizarmos emojis para o favicon."
+### A Estrutura do HTML,Antes de mais nada vamos colocar no código a estrutura HTML da nossa calculadora. Vamos dividir a calculadora em três seções principais.
+### Estilizando com TailwindCSS,"Vamos estilizar a calculadora. Vamos também ver algumas dicas de Tailwind como, por exemplo, aprender a estilizar elementos filhos bem como uma ferramenta interessante para encontrar a cor respectiva do Tailwind."
+### Componentizando o Label,Vamos ver as melhores técnicas para criarmos componentes realmente flexíveis e que podem
+### Componentizando o Button e o Input,"Analogamente ao componente Label, vamos componentizar nosso Button e nosso Input."
+### Usando o tailwind-merge e o clsx,Quando começamos extrair componentes é comum termos conflitos de classes do Tailwind. Vamos criar uma função que resolve esse problema.
+### Estruturando a lógica da calculadora,"Antes de mergulharmos na lógica, vamos pensar sobre o que queremos fazer."
+### Usando um formulário não controlado,"A não ser que seja necessário, é mais interessante utilizar formulários não controlados no React. Vamos ver uma forma de fazer isso no React."
+### Criando validações e transformando strings,"Para fazermos o cálculo do IMC, precisamos transformar as strings que vêm dos inputs em numbers. Vamos ver como fazer isso para criarmos nossas primeiras validações."
+### Calculando o IMC e adicionando ao estado,"No fim, o cálculo do IMC é a parte mais simples da aplicação. Vamos extraí-lo para uma função à parte. Também vamos criar o estado para que o cálculo seja refletido na UI."
+### Renderizando condicionalmente o resultado,"Vamos mostrar os dados após clicarmos em “calcular”. Vamos criar, para isso, a tabela de resultado."
+### Formatando os números com a Intl API,Precisamos de uma função para mostrar de forma intuitiva (e com vírgulas ao invés de pontos) os números para nós. Também vamos componentizar a tabela de resultados.
+### Limpando o formulário,Vamos colocar as últimas funcionalidades: reset do formulário bem como desabilitar os campos após o cálculo.
+### Responsividade,Vamos fazer a nossa aplicação ser bonita e agradável também em celulares. Com Tailwind isso fica fácil.
+### Finalização,"Missão cumprida, projeto finalizado!"

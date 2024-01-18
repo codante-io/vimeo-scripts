@@ -10,7 +10,7 @@ dotenv.config();
 // Altere aqui!
 const VIMEO_TOKEN = process.env.VIMEO_TOKEN;
 const VIMEO_FOLDER_ID = process.env.VIMEO_FOLDER_ID;
-const WORKSHOP_ID = 65;
+const WORKSHOP_ID = 73;
 // ======================
 
 if (!VIMEO_TOKEN) throw new Error('VIMEO_TOKEN not found in .env file');

@@ -1,0 +1,22 @@
+name,description
+Apresentação do Instrutor,O Lucas Viana se apresenta e apresenta a estrutura do Workshop
+Contexto do GraphQL,Vamos voltar à história e entender o contexto no qual o GraphQL surgiu e quais problemas resolvia
+O que é GraphQL e sua Aplicação,"O Lucas traz uma definição para o que é GraphQL, além de falar o que GraphQL não é."
+Nossa primeira Query com GraphQL,Vamos utilizar a API do Rick & Morty para treinarmos os primeiros passos com o GraphQL
+Principais bibliotecas de GraphQL,As 3 principais bibliotecas que utilizam GraphQL são apresentadas nessa aula. O Lucas também traz o exemplo da nova API do Github que utiliza GraphQL.
+Possibilidade de usos,Vamos ver as diferentes formas de utilização do GraphQL e a possibilidade de operar conjuntamente com APIs Rest.
+Dica: Nomeando Operações,Porque é importante que as operações sejam nomeadas no GraphQL
+Entendendo um Schema,Vamos subir uma API própria de livros e autores para treinarmos outras operações bem como entender como são definidos Schemas. O instrutor também tira algumas dúvidas que surgiram.
+Criando uma mutation,Agora iremos ver como funciona uma mutation usando a API de livros que foi apresentada anteriormente.
+Variáveis e Fragments no GraphQL,Vamos otimizar nossas operações utilizando variáveis e fragments no GraphQL.
+GraphQL é uma chamada HTTP,"Vamos ver o que acontece em uma requisição do GraphQL. No fim do dia, é apenas uma chamada HTTP. O instrutor aproveita também para tirar uma dúvida."
+Resolvers,A interligação entre as operações  e a base de dados é feita pelos resolvers. Vamos ver como eles são estruturados no lado do servidor.
+Começando com o Apollo Client,Vamos consumir nossa API GraphQL com um frontend em React
+Queries no React,Vamos executar a primeira query dentro de um componente React.
+Query com o useLazyQuery,"O useQuery é executado quando o componente é renderizado e não é adequado para ser usado em eventos (como clique de botão, por exemplo). Para isso, vamos ver o useLazyQuery."
+Uma Mutation em um formulário no React,Vamos criar a primeira mutation para cadastrar autores na nossa aplicação
+Atualizando o cache no Apollo,"Em algumas situações o cache do Apollo é atualizado de forma automática. Em outras, precisamos fazer de forma manual. Nesta aula é proposto um exercício para resolver o problema de cache do createAuthor"
+Resolvendo o problema de atualização do cache,Vamos ver a resolução do exercício para atualização do cache.
+Optimistic UI com Apollo,"Para deixar uma experiência mais fluida, vamos utilizar essa estratégia de ""UI otimista"" que é facilmente implementável com o Apollo."
+Schema no cliente,Guardando informações no cliente pode ser uma estratégia importante e é possível com o Apollo.
+Criando um cadastro para Livros,Vamos finalizar nossa aplicação criando agora um formulário de cadastro de Livros que vai utilizar a lista de autores em um select
