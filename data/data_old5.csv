@@ -1,0 +1,15 @@
+name,description
+Apresentando o Projeto,"Este é o Feely, um projeto hipotético de uma startup de reconhecimento facial. Vai ser uma jornada divertida!"
+O repositório do Projeto,Vamos “sobrevoar” o repositório: o que já temos e o que precisaremos construir.
+Acessando a webcam com JS vanilla,"Antes de acessarmos a webcam no nosso projeto, o instrutor Cestari demonstra como fazer isso com vanilla JS."
+Acessando a webcam em uma aplicação React,Vamos utilizar o useEffect e o useRef para conseguirmos acesso à nossa webcam pelo navegador.
+Iniciando com o FaceAPI.js,Vamos rapidamente introduzir a biblioteca e o que ela faz.
+Carregando os modelos de Machine Learning,"Para que o FaceAPI funcione precisamos importar os modelos das respectivas tarefas. Nesse caso vamos importar 3: o de detecção de face, o de reconhecimento de pontos da face e o de reconhecimento de expressões."
+Detectando uma face no Vídeo,Vamos começar com o FaceAPI detectando uma face no vídeo.
+Desenhando a detecção no Vídeo,Vamos usar o <canvas> para desenharmos o *box* da captura facial em cima do vídeo.
+Desenhando os Landmarks e Expressões Faciais,Vamos desenhar no canvas agora os 68 pontos importantes da face e também as expressões faciais
+Capturando a expressão mais provável,"O modelo traz uma lista de expressões com suas probabilidades, mas ainda precisamos eleger qual é a expressão mais provável."
+Criando o card de resultado da expressão,"Agora que temos todos os elementos importantes, precisamos mostrar para o usuário qual é a expressão mais provável daquele momento."
+Criando o estado de loading quando estiver carregando,Ainda falta exibirmos o spinner quando a aplicação está carregando.
+Refatorando e limpando o código,Vamos fazer uma limpeza e extrair alguns componentes e hooks customizados.
+Finalização,"É isso, nosso produto está pronto!"

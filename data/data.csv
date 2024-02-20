@@ -1,17 +1,29 @@
 name,description
-### Introdução e Apresentação do Projeto,Apresentando o projeto de Calculadora de IMC com React
-### Iniciando o projeto com Vite e TailwindCSS,"Além de instalarmos o Vite, vamos limpar os arquivos e utilizar um serviço (fav.farm) para utilizarmos emojis para o favicon."
-### A Estrutura do HTML,Antes de mais nada vamos colocar no código a estrutura HTML da nossa calculadora. Vamos dividir a calculadora em três seções principais.
-### Estilizando com TailwindCSS,"Vamos estilizar a calculadora. Vamos também ver algumas dicas de Tailwind como, por exemplo, aprender a estilizar elementos filhos bem como uma ferramenta interessante para encontrar a cor respectiva do Tailwind."
-### Componentizando o Label,Vamos ver as melhores técnicas para criarmos componentes realmente flexíveis e que podem
-### Componentizando o Button e o Input,"Analogamente ao componente Label, vamos componentizar nosso Button e nosso Input."
-### Usando o tailwind-merge e o clsx,Quando começamos extrair componentes é comum termos conflitos de classes do Tailwind. Vamos criar uma função que resolve esse problema.
-### Estruturando a lógica da calculadora,"Antes de mergulharmos na lógica, vamos pensar sobre o que queremos fazer."
-### Usando um formulário não controlado,"A não ser que seja necessário, é mais interessante utilizar formulários não controlados no React. Vamos ver uma forma de fazer isso no React."
-### Criando validações e transformando strings,"Para fazermos o cálculo do IMC, precisamos transformar as strings que vêm dos inputs em numbers. Vamos ver como fazer isso para criarmos nossas primeiras validações."
-### Calculando o IMC e adicionando ao estado,"No fim, o cálculo do IMC é a parte mais simples da aplicação. Vamos extraí-lo para uma função à parte. Também vamos criar o estado para que o cálculo seja refletido na UI."
-### Renderizando condicionalmente o resultado,"Vamos mostrar os dados após clicarmos em “calcular”. Vamos criar, para isso, a tabela de resultado."
-### Formatando os números com a Intl API,Precisamos de uma função para mostrar de forma intuitiva (e com vírgulas ao invés de pontos) os números para nós. Também vamos componentizar a tabela de resultados.
-### Limpando o formulário,Vamos colocar as últimas funcionalidades: reset do formulário bem como desabilitar os campos após o cálculo.
-### Responsividade,Vamos fazer a nossa aplicação ser bonita e agradável também em celulares. Com Tailwind isso fica fácil.
-### Finalização,"Missão cumprida, projeto finalizado!"
+Introdução e Conteúdo do Workshop,"Workshop prático sobre TypeScript no React com exercícios de migração de aplicação JavaScript, tipagem de props e eventos, criação de componentes flexíveis inspirados em UI libraries e uso de Tailwind CSS."
+Transformando uma Aplicação JS em TS,"Neste vídeo, acompanhamos o processo de transformação de uma aplicação JavaScript em TypeScript usando o Vite. O tutorial mostra a criação do projeto no Vite, instalação do TypeScript e a migração do projeto."
+O tsc init e o tsconfig.json,"Neste vídeo, mostramos como iniciar um projeto TypeScript com o comando 'npx tsc --init' e a importância do arquivo tsconfig.json para definir as diretrizes de compilação do TypeScript para Javascript."
+Ajustando o projeto,"Neste vídeo, aprendemos sobre a convivência de arquivos JavaScript e TypeScript, a correção de erros ao utilizar JSX em um arquivo TSX e como configurar o compilador TypeScript para JSX."
+JavaScript x TypeScript: Migração Simples,"Neste trecho do vídeo, é discutida a migração de um componente JavaScript para um componente Typescript. É ressaltado que, na prática, a única diferença entre eles é a extensão do arquivo, devido à inteligência do Typescript e React."
+Migrando todo o projeto para TypeScript,"No vídeo, mostramos como configurar o TypeScript e o JavaScript em um projeto, ajustando o tsconfig.json para compilar corretamente os arquivos e utilizar as funcionalidades mais recentes do ECMAScript."
+moduleResolution Bundler,"Este vídeo aborda a propriedade Module Resolution do TypeScript 5, introduzida recentemente. Explica como o compilador entenderá os módulos e a importância desse recurso para os bundlers como o Vite."
+Migração para Typescript: Erros Comuns,"Migração de um aplicativo para Typescript. Apresenta erros comuns de Typescript ao migrar aplicações e como corrigi-los, abordando a tipagem de funções e o uso do non-null operator."
+Brincando com TypeScript no TS Playground,"No vídeo, exploramos a inteligência do compilador TypeScript no TS Playground. Demonstramos a inferência automática de tipos em arrays de números, strings e objetos, ressaltando a importância da simplificação do código. Também abordamos a tendência de remover TypeScript de certas bibliotecas."
+O Gerador de Frases Aleatórias,"Neste vídeo, acompanhamos a criação de uma aplicação em TypeScript com frases motivacionais utilizando React. O instrutor demonstra o uso do Tailwind CSS para estilizar a aplicação de forma simples."
+Exercício - Props,"Exercício de Props. A tarefa é converter os componentes QuoteCard e App de JavaScript para TypeScript, adicionando as tipagens adequadas. Passo a passo detalhado para alcançar o objetivo."
+Explicação - Props,"O vídeo aborda a transformação de um componente em TypeScript no React. São discutidos erros comuns, como a falta de tipagem de props e a manipulação de any implícitos. Dicas são compartilhadas."
+Tipando o useState,"No vídeo, é abordado um erro com useState e tipagem de hooks em TypeScript. É explicado como corrigir a inferência de nulos no estado inicial, usando generics e resolvendo problemas de compilação."
+Exercício - Children,"Neste exercício é proposto criar um componente Card genérico para envelopar o conteúdo do QuoteCard, visando a organização do código e simplificação da UI utilizando Tailwind CSS."
+Resolução - Children,"Neste vídeo, é demonstrado o processo de criação de um componente Card genérico em React. São abordadas questões de tipagem para o atributo Children, mostrando diferentes abordagens para solucionar o erro de TypeScript."
+Exercício - Eventos,"Neste exercício de Event e EventHandler, iremos refatorar o componente App para diminuir sua responsabilidade, criamos o HeaderCard e um botão para trocar a cor do fundo."
+Resolução - Eventos,"Neste vídeo, é mostrado o processo de extrair responsabilidades em um componente app do React. A mudança envolve a criação de um headercard e um botão que altera aleatoriamente a cor do fundo."
+Exercício - Eventos II,Agora vamos adicionar um novo botão para escolher manualmente a cor de fundo em um componente. A criação do terceiro botão color picker e a tipagem da função setBgColor são abordadas.
+Resolução - Eventos II,"Neste vídeo, aprendemos a implementar um color picker em React, usando HTML e CSS. Criamos um input type color, envolvemos em um label para simular um botão e alteramos a cor conforme a seleção."
+Exercício - Componentes Flexíveis,"Criando um componente flexível em TypeScript. A ideia é extrair um componente Button, torná-lo flexível com props como onClick, children e disable e repassar outras props de botão de forma eficiente."
+Resolução - Componentes Flexíveis,"Estamos desenvolvendo um componente Button personalizado em React. Aprendemos a passar props, como onClick e Children, para que nosso botão funcione corretamente e possa ser reutilizado."
+Foco no primeiro botão,Aprendemos a utilizar o useRef no React para focar em elementos do DOM. Demonstramos como criar um botão focado e a importância do forwardRef para passar a Ref corretamente.
+Exercício - Componentes Flexíveis II,"Neste vídeo, exploramos como adicionar classes do tailindex.css a um componente de botão para maior flexibilidade. Utilizamos as bibliotecas clsx e tailind merge para facilitar a tarefa de mudar estilos individualmente."
+Resolução - Componentes Flexíveis II,Problema de estilização de botões no desenvolvimento de interface. Dificuldades com propriedades CSS sobrescrevendo estilos anteriores. Exploração de soluções com tailwind.merge e CLSx para priorizar estilos sem perder formatação original.
+Exercício e Resolução - Hooks,"Vamos discutir a tipagem de useState e useRef em exercício de hooks. Mostramos como tipar corretamente, com exemplos práticos e explicações sobre quando é necessário fazer a tipagem. Também mencionamos a continuidade dos estudos com useRef e context."
+Exercício - Context,"Vídeo sobre migrar o estado de um app React para um contexto, tornando-o acessível em qualquer componente. Também explora a transferência do estado das frases motivacionais para o contexto usando Context API."
+Resolução - Context,Nesta aula é mostrado o processo de criação de uma pasta e arquivos no contexto de desenvolvimento em TypeScript. O foco é na definição de um estado inicial e tipagem.
+Finalização,"Finalizamos os exercícios do workshop e compartilhamos uma frase motivacional da aplicação desenvolvida. ""A coragem conduz as estrelas e o medo a morte."" Esperamos vê-los em futuros workshops no Codante. Tchau!"
